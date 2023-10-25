@@ -4,10 +4,10 @@ function parseAndDisplayName(inputName){
    
     const nameArray = inputName.split(" ");
 
-    if (nameArray.length == 1){
+    if (nameArray.length == 1){ //only first name
         console.log("Name : " + inputName);
     }
-    else if(nameArray.length == 2){
+    else if(nameArray.length == 2){ //first and last
         let first = nameArray[0];
         let last = nameArray[1];
 
@@ -15,7 +15,7 @@ function parseAndDisplayName(inputName){
         console.log("First name: " + first);
         console.log("Last name : " + last);
     }
-    else if(nameArray.length == 3){
+    else if(nameArray.length == 3){ // first, middle, and last
         let first = nameArray[0];
         let middle = nameArray[1];
         let last = nameArray[2];
