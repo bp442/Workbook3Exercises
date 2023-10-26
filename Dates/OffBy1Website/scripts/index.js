@@ -1,6 +1,6 @@
 "use strict";
 
-window.onload() = init;
+window.onload = init;
 
 function init(){
     const buttonClicked = document.getElementById("dateBtn");
@@ -10,10 +10,8 @@ function init(){
 
 
 function displayAsString(){
-    let theDate = (document.getElementById("dateInput").value);
-    theDate = theDate.toString();
+    const theDate = document.getElementById("dateInput").value;
 
-    console.log(theDate);
     let answerField = document.getElementById("answerField");
-    answerField.innerHTML = theDate;
+    answerField.innerHTML = theDate.toString();
 }
